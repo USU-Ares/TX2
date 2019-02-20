@@ -1,7 +1,9 @@
 # TX2
 Full workspace on TX2
 
+
 Instructions:
+
 ARES_ws is the catkin workspace
 
 serial is the only submodule in this repository. Clone serial from source.
