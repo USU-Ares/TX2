@@ -1,0 +1,28 @@
+  <launch>
+	<rosparam subst_value="True">
+
+    inertial_sense_node: { port: "/dev/ttyUSB0",
+                           baud: 3000000,
+                           navigation_dt_ms: 6,
+                           stream_INS: true,
+                           stream_IMU: false,
+                           stream_GPS: false,
+                           stream_GPS_info: false,
+                           stream_baro: false,
+                           stream_mag: false,
+                           stream_preint_IMU: false,
+                           inclination: 1.14878541071,
+                           declination: 0.20007290992,
+                           dynamic_model: 8,
+                           INS_rpy: [0, 0, -1.5708],
+                           INS_xyz: [0, 0.052, 0.470],
+                           GPS_ant_xyz: [0, 0.130, 0.580],
+                           GPS_ref_lla: [, 0, 0],
+                           serial1_baud_rate: 115200,
+                           NMEA_rate: 200,
+                           NMEA_configuration: 0x0F,
+                           NMEA_ports: 0x02
+                         }
+    </rosparam>
+	<node name="inertial_sense_node" pkg="inertial_sense" type="inertial_sense_node" output="screen"/>
+</launch>
